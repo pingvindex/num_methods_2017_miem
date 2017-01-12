@@ -7,23 +7,7 @@ def discriminant(b, c):
 
 def root_to_str(x):
     return '{:+.10f}{:+.10f}j'.format(x[0], x[1])
-'''
-def root_to_str(x):
-    x_view = ''
-    if x[0] == 0.0 and x[1] == 0.0:
-        return '0.0'
-    if x[0] != 0.0:
-        x_view += str(x[0])
-    if x[1] != 0.0:
-        if x[1] > 0:
-            if x[0] != 0.0:
-                x_view += '+'+str(x[1])+'j'
-            else:
-                x_view += str(x[1])+'j'
-        else:
-            x_view += str(x[1])+'j'
-    return x_view
-'''
+
 
 def solve_quadratic(b, c):
     D = discriminant(b, c)
