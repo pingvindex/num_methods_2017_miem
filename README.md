@@ -1,2 +1,3 @@
-**** Directory for my homeworks
-My homeworks, nothing interesting
+# Численные методы, дз
+
+Просто домашние задания по чмам, ничего интересного
