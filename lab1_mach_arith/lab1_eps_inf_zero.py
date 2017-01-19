@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import division, absolute_import, print_function
 
-def epsilon():
+def infinity():
     N = 0
     while True:
         try:
@@ -20,7 +20,7 @@ def zero():
             N+=1
 
 
-def infty():
+def epsilon():
     N = 0
     while True:
         if 1 + 2.0**(-N) == 1:
@@ -30,6 +30,6 @@ def infty():
 
 
 if __name__ == "__main__":
-    print(epsilon())
+    print(infinity())
     print(zero())
-    print(infty())
+    print(epsilon())
