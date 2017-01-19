@@ -4,11 +4,10 @@ from __future__ import division, absolute_import, print_function
 def epsilon():
     N = 0
     while True:
-        try:
-            tmp = 2.0**N
-        except OverflowError:
-            return 2.0**(N-1)
-        N += 1
+        if 1 + 2.0**(-N) == 1:
+            return 2**(-N+1)
+        else:
+            N+=1
 
 
 def zero():
@@ -23,10 +22,11 @@ def zero():
 def infty():
     N = 0
     while True:
-        if 1 + 2.0**(-N) == 1:
-            return 2**(-N+1)
-        else:
-            N+=1
+        try:
+            tmp = 2.0**N
+        except OverflowError:
+            return 2.0**(N-1)
+        N += 1
 
 
 if __name__ == "__main__":
